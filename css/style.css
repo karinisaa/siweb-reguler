@@ -1,0 +1,100 @@
+/* BACKGROUND HALAMAN */
+body {
+    background: #4D83AA;
+    font-family: Arial, sans-serif;
+}
+
+/* CONTAINER UTAMA */
+.container {
+    width: 800px;
+    margin: 20px auto;
+    background: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* HEADER */
+.header {
+    background: #E2D800;
+    color: #032152;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border-top: 10px dotted #4D83AA;
+}
+
+/* MAIN FLEX */
+.main {
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 300px;
+    padding: 20px;
+    color: #032152;
+    border-right: 3px dotted #032152;
+}
+
+.sidebar h3 {
+    margin-bottom: 5px;
+}
+
+.line {
+    border-bottom: 2px dotted #032152;
+    margin-bottom: 10px;
+}
+
+.sidebar input {
+    padding: 5px;
+    width: 180px;
+}
+
+.sidebar button {
+    padding: 5px 10px;
+}
+
+/* CONTENT */
+.content {
+    width: 500px;
+    padding: 20px;
+    color: #032152;
+}
+
+.content h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* TABLE BOX */
+.table-box {
+    background: #9CBCD0;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 0 #032152;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    padding: 10px;
+}
+
+thead {
+    background: #7FA6BD;
+    color: #032152;
+}
+
+/* TABLE FOOT */
+.table-foot {
+    background: #e6eef2;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
