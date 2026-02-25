@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latihan3</title>
+</head>
+<body>
+
+<button onclick="clickCounter()">Click me!</button>
+
+<p id="result"></p>
+
+<p>Click the button to see the counter increase.</p>
+<p>Close the browser tab (or window), and try again, the counter will continue.</p>
+
+<script>
+    if (localStorage.clickcount) {
+        document.getElementById("result").innerHTML =
+            "You have clicked the button " + localStorage.clickcount + " time(s).";
+    }
+
+    function clickCounter() {
+        if (localStorage.clickcount) {
+            localStorage.clickcount = Number(localStorage.clickcount) + 1;
+        } else {
+            localStorage.clickcount = 1;
+        }
+
+        document.getElementById("result").innerHTML =
+            "You have clicked the button " + localStorage.clickcount + " time(s).";
+    }
+</script>
+
+</body>
+</html>
