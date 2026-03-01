@@ -1,0 +1,75 @@
+/* Styling Dasar Halaman */
+body {
+    background-color: #2c5d94; /* Biru */
+    color: #ff0000;            /* Merah */
+    font-family: 'Times New Roman', serif;
+    padding: 20px;
+    transition: background-color 0.5s, color 0.5s; /* Efek berubah pelan-pelan */
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 600px;
+}
+
+fieldset {
+    border: 2px solid white; /* Garis kotak putih */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: inherit; /* Warna tulisan "Warna" ikut warna teks utama */
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0 5px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.input-group label {
+    width: 200px; /* Lebar label agar sejajar */
+}
+
+/* Styling Khusus Input Color agar terlihat kotak bagus */
+input[type="color"] {
+    -webkit-appearance: none;
+    border: 3px solid #ddd;
+    width: 60px;
+    height: 40px;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+}
+
+/* Menghilangkan border internal bawaan browser */
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+}
+
+/* Styling Tombol Simpan */
+button {
+    padding: 8px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #999;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+
+button:active {
+    transform: translateY(2px); /* Efek pencet */
+}
