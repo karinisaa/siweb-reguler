@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistem Informasi | ITENAS 2026</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Hidden logo reference for JS -->
+<img id="logo-hidden" src="assets/logo itenas.jpg" alt="" style="display:none;" />
+
+<!-- LOGO BACKGROUND PATTERN -->
+<div class="logo-bg" id="logo-bg"></div>
+
+<!-- MAIN WRAPPER -->
+<div id="wrapper">
+
+  <!-- 6‑grid photo -->
+  <div class="photo-grid">
+    <img src="assets/itenas.jpeg" alt="Photo 1" />
+    <img src="assets/itenas.jpeg" alt="Photo 2" />
+    <img src="assets/itenas.jpeg" alt="Photo 3" />
+    <img src="assets/itenas.jpeg" alt="Photo 4" />
+    <img src="assets/itenas.jpeg" alt="Photo 5" />
+    <img src="assets/itenas.jpeg" alt="Photo 6" />
+  </div>
+
+  <!-- LAYOUT: nav + content -->
+  <div class="layout">
+
+    <!-- SIDEBAR NAV -->
+    <nav>
+      <a href="#" data-page="home">Home</a>
+      <a href="#" data-page="menu">Menu</a>
+      <a href="#" data-page="calc">Calculator</a>
+      <hr />
+    </nav>
+
+    <!-- CONTENT AREA -->
+    <div class="content">
+
+      <!-- ===== HOME PAGE ===== -->
+      <div id="page-home">
+        <div class="home-row">
+          <span>klik button disamping</span>
+          <button class="btn-shout" id="btn-shout">Shout</button>
+        </div>
+      </div>
+
+      <!-- ===== MENU PAGE ===== -->
+      <div id="page-menu">
+        <table class="menu-table">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Makanan/Minuman</th>
+              <th>Harga</th>
+              <th>Pesan</th>
+            </tr>
+          </thead>
+          <tbody id="menu-tbody">
+            <!-- rows injected by JS -->
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2" style="text-align:right; padding-right:6px;">Jumlah Total</td>
+              <td><input type="text" id="out-total" readonly value="0" class="out-field" /></td>
+              <td style="text-align:right; padding-right:4px;">Diskon<input type="text" id="out-diskon" readonly value="0" class="out-field" /></td>
+            </tr>
+            <tr>
+              <td colspan="2" style="text-align:right; padding-right:6px;">Jumlah Bayar</td>
+              <td><input type="text" id="out-bayar" readonly value="0" class="out-field" /></td>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <!-- ===== CALCULATOR PAGE ===== -->
+      <div id="page-calc">
+        <div class="calc-row">
+          <input type="number" id="calc-a" placeholder="0" />
+          <select id="calc-op">
+            <option value="*">*</option>
+            <option value="/">÷</option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="%">%</option>
+            <option value="^">^</option>
+          </select>
+          <input type="number" id="calc-b" placeholder="0" />
+          <span class="eq">=</span>
+          <input type="text" id="calc-result" class="result-box" readonly placeholder="hasil" />
+        </div>
+        <div class="calc-btn-row">
+          <button class="btn-hitung" id="btn-hitung">Hitung</button>
+          <button class="btn-reset-calc" id="btn-reset-calc">Reset</button>
+        </div>
+      </div>
+
+    </div><!-- end .content -->
+  </div><!-- end .layout -->
+
+  <!-- FOOTER -->
+  <div class="footer">
+    162023043<br>
+    Sistem Informasi | ITENAS 2026
+  </div>
+
+</div><!-- end #wrapper -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
